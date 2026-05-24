@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "v-nav": "/components/nav/index",
+    "v-bill": "/components/bill/index",
+    "date-tag": "/components/date-tag/index"
+  },
+  "navigationBarTitleText": "记一笔",
+  "navigationStyle": "custom"
+
+}

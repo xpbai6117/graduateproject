@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  margin-top: 80rpx;
+}
+
+.tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+  height: 90rpx;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.tip-image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.tip-text {
+  color: #157658;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+
+.main {
+  width: 100%;
+  margin-top: 80rpx;
+
+}
+
+.main-text {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.grid {}
+
+.grid image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10rpx 20rpx;
+  border-radius: 10px;
+  padding: 20rpx;
+  background-color: whitesmoke;
+}
+
+.item text {
+  font-size: 28rpx;
+  margin-top: 25rpx;
+}
+
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 400px;
+}

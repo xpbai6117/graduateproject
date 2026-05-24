@@ -1,0 +1,59 @@
+<l-toast />
+<l-dialog />
+<view class="container">
+
+  <l-avatar bind:lintap="onTapAvatar" class="avatar" open-data="{{['userAvatarUrl','userNickName']}}" size="160"
+    placement="bottom" />
+
+  <view class="tip">
+    <!-- <image class="tip-image" src="/images/budget.png"></image> -->
+    <text class="tip-text">林深见鹿，海蓝见鲸</text>
+  </view>
+
+  <view class="main">
+    <text class="main-text">常用功能</text>
+
+    <l-grid l-class="grid" col-num="3">
+
+      <l-grid-item l-grid-item-class="item" key="one" slot="one" bind:tap="onGoBudget">
+        <image src="/images/my/budget.png"></image>
+        <text>预算中心</text>
+      </l-grid-item>
+
+      <l-grid-item l-grid-item-class="item" key="two" slot="two" bind:tap="onGoTarget">
+        <image src="/images/my/target.png"></image>
+        <text>存一笔钱</text>
+      </l-grid-item>
+
+      <l-grid-item l-grid-item-class="item" key="five" slot="five" bindtap="onExport">
+        <image src="/images/my/export.png"></image>
+        <text>导出账单</text>
+      </l-grid-item>
+
+      <l-grid-item l-grid-item-class="item" key="six" slot="six">
+        <l-button special="{{true}}" open-type="feedback">
+          <image src="/images/my/feedback.png"></image>
+        </l-button>
+        <text>意见反馈</text>
+      </l-grid-item>
+
+      <l-grid-item l-grid-item-class="item" key="four" slot="four">
+        <l-button special="{{true}}" open-type="contact">
+          <image src="/images/my/kefu.png"></image>
+        </l-button>
+        <text>联系作者</text>
+      </l-grid-item>
+
+      <l-grid-item l-grid-item-class="item" key="three" slot="three">
+        <l-button special="{{true}}" open-type="share">
+          <image src="/images/my/share.png"></image>
+        </l-button>
+        <text>分享有鱼</text>
+      </l-grid-item>
+ƒ
+    </l-grid>
+  </view>
+
+
+
+</view>

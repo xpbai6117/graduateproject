@@ -1,0 +1,20 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mp-cells": "../../../miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "../../../miniprogram_npm/weui-miniprogram/cell/cell",
+    "mp-slideview": "../../../miniprogram_npm/weui-miniprogram/slideview/slideview",
+    "selector": "/component/selector/selector",
+    "mp-icon":"../../../miniprogram_npm/weui-miniprogram/icon/icon",
+		"notice": "/component/notice/notice",
+		"create-book": "/pages/index/createBook/createBook",
+    "home-book": "/pages/index/home/home"
+  },
+  "navigationBarBackgroundColor": "#f36957",
+  "navigationBarTitleText": "账本首页",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#f36957",
+  "navigationBarTextStyle":"white"
+
+}

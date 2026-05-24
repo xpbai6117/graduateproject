@@ -1,0 +1,4 @@
+<!--pages/bind/bind.wxml-->
+<!-- <view>
+<button open-type="getPhoneNumber" bindgetphonenumber="bindPhone">用户绑定</button>
+</view> -->

@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<!--pages/login/login.wxml-->
+<view>
+  <form bindsubmit="editUsername">
+    <view class="form">
+      <view class="list">
+        <view class="item">
+          <view class="item_name">昵称：</view>
+          <input class="item_input" type="nickname" value="{{nickName}}" name="nickName"/>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view>
+        <button class="sure" form-type="submit">保存</button>
+      </view>
+    </view>
+  </form> 
+</view>

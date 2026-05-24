@@ -1,0 +1,14 @@
+{
+  "usingComponents": {   
+    "mp-icon": "../../miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-badge": "../../miniprogram_npm/weui-miniprogram/badge/badge",
+    "jz-input":"../../component/jzinput/index",
+    "van-cell-group": "../../component/dist/cell-group/index",
+    "van-cell": "../../component/dist/cell/index"
+    
+  },
+  "navigationBarBackgroundColor": "#f36957",
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh":true,
+  "navigationBarTextStyle":"white"
+}

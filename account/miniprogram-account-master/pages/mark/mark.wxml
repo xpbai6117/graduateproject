@@ -1,0 +1,148 @@
+<!--pages/addrecord/index.wxml-->
+<view class="wrap">
+	<view class="tabs-wrap">
+		<van-tabs type="card" animated swipeable active="{{ tabActive }}" bind:change="onTabChange">
+
+			<van-tab title="收入">
+
+				<view class='category-wrap'>
+					<!-- <view wx:for="{{srCategoryList}}" bindlongpress="onViewCategoryIconSr" class='category-item' data-index='{{index}}' bindtap='categroyItemSelect'>
+            <view wx:if="{{categoryIconSr}}" class="category-icon" data-id='{{item.id}}' catchtap="onRemoveCategory">
+              <image src="../../static/img/close.png" style="width: 30rpx;height: 30rpx;" />
+            </view>
+            <image class="{{srCategorySelectedIndex==index?'category-item-img-select category-item-img':'category-item-img'}}" mode='widtFix' src="{{item.icon}}"></image>
+            <view class='category-item-name'>{{item.name}}</view>
+          </view> -->
+					<view class="card-query">
+						<view class="card-query-title">收入分类：</view>
+						<!-- <view style="margin: 20rpx 0;">
+							<picker range="{{srCategoryList}}" range-key="name" mode="{{'selector'}}" value="{{item.id}}" bindchange="bindPickerChange">
+								<view class="picker">
+									{{srCategoryId<0?'请选择输入分类':srCategoryList[srCategoryId].name}}
+									<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+								</view>
+							</picker>
+						</view> -->
+						<view class="card-query-value" wx:if="{{srCategoryId == -1}}" bind:tap="choseCategory">请选择分类<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+						</view>
+						<view class="card-query-value" wx:else="{{srCategoryId != -1}}" bind:tap="choseCategory">{{srCategoryList[srCategoryId].name}}
+							<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+						</view>
+						<view class="picker">
+							<van-popup show="{{show}}" closeable position="bottom" custom-style="height: 80%" bind:close="onClose">
+								
+								<scroll-view  type="list" scroll-y style="height:950rpx">
+									<view class="book-popup-page">
+									<view class="book-popup-for" wx:for="{{categoryList}}" wx:key="index" data-value="{{index}}" bindtap="categoryChange">
+										<view class="book-popup-for-item">
+											<image class="info-icon" mode='widtFix' src="{{item.icon}}"></image>
+											<view class="book-name">{{item.name}}</view>
+										</view>
+									</view>
+								</view>
+								</scroll-view>
+							
+						</van-popup>
+						</view>
+					</view>
+
+					<!-- <view class="card-query">
+                <view class="card-query-title">收入分类：</view>
+                <view style="margin: 20rpx 0;">
+                    <picker range="{{srCategoryList}}" range-key="name" mode="{{'selector'}}" value="{{item.id}}" bindchange="bindPickerChange">
+                        <view class="picker">
+                            {{srCategoryId<0?'请选择输入分类':srCategoryList[srCategoryId].name}}<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+                        </view>
+                    </picker>
+                </view>
+            </view> -->
+					<!-- <view class='category-item' data-index='0' bindtap='onAddCatrgory'>
+            <image class="'category-item-img'" mode='widtFix' src="/pages/image/add.svg"></image>
+            <view class='category-item-name'>新增分类</view>
+          </view> -->
+				</view>
+				<view class="info-wrap">
+					<!-- 这里展示选中的分类 -->
+					<view class="info-wrap-left">
+						<image class="category-item-img-select info-icon" mode='widtFix' src="{{srCategoryList[srCategoryId].icon}}"></image>
+						<view class="info-category">
+							{{srCategoryList[srCategoryId].name}}
+						</view>
+					</view>
+					<view class="info-money">{{money===''?"0.00":money}}</view>
+				</view>
+			</van-tab>
+			<van-tab title="支出">
+
+				<view class='category-wrap'>
+					<!-- <view wx:for="{{zcCategoryList}}" bindlongpress="onViewCategoryIconZc" class='category-item' data-index='{{index}}' bindtap='categroyItemSelect'>
+            <view wx:if="{{categoryIconZc}}" class="category-icon" data-id='{{item.id}}' catchtap="onRemoveCategory">
+              <image src="../../static/img/close.png" style="width: 30rpx;height: 30rpx;" />
+            </view>
+            <image class="{{zcCategorySelectedIndex==index?'category-item-img-select  category-item-img':'category-item-img'}}" mode='widtFix' src="{{item.icon}}"></image>
+            <view class='category-item-name'>{{item.name}}</view>
+          </view> -->
+
+					<view class="card-query">
+						<view class="card-query-title">支出分类：</view>
+						<view class="card-query-value" wx:if="{{zcCategoryId == -1}}" bind:tap="choseCategory">请选择分类<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+						</view>
+						<view class="card-query-value" wx:else="{{zcCategoryId != -1}}" bind:tap="choseCategory">{{zcCategoryList[zcCategoryId].name}}
+							<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+						</view>
+						<view class="picker">
+							<van-popup show="{{show}}" closeable position="bottom" custom-style="height: 80%" bind:close="onClose">
+								
+									<scroll-view  type="list" scroll-y style="height:1000rpx">
+										<view class="book-popup-page">
+										<view class="book-popup-for" wx:for="{{categoryList}}" wx:key="index" data-value="{{index}}" bindtap="categoryChange">
+											<view class="book-popup-for-item">
+												<image class="info-icon" mode='widtFix' src="{{item.icon}}"></image>
+												<view class="book-name">{{item.name}}</view>
+											</view>
+										</view>
+									</view>
+									</scroll-view>
+								
+							</van-popup>
+						</view>
+					</view>
+					<!-- <view class="card-query">
+						<view class="card-query-title">支出分类：</view>
+						<view style="margin: 20rpx 0;">
+							<picker range="{{zcCategoryList}}" range-key="name" mode="{{'selector'}}" value="{{item.id}}" bindchange="bindPickerChangeZc">
+								<view class="picker">
+									{{zcCategoryId<0?'请选择输入分类':zcCategoryList[zcCategoryId].name}}
+									<image style="width: 25rpx;height: 25rpx;" src="../../static/img/lower.png"></image>
+								</view>
+							</picker>
+						</view>
+
+					</view> -->
+					<!-- <view class='category-item' data-index='1' bindtap='onAddCatrgory'>
+						<image class="'category-item-img'" mode='widtFix' src="/pages/image/add.svg"></image>
+						<view class='category-item-name1'>新增分类</view>
+					</view> -->
+				</view>
+				<view class="info-wrap">
+					<!-- 这里展示选中的分类 -->
+					<view class="info-wrap-left">
+						<image class="category-item-img-select info-icon" mode='widtFix' src="{{zcCategoryList[zcCategoryId].icon}}"></image>
+						<view class="info-category">
+							{{zcCategoryList[zcCategoryId].name}}
+						</view>
+					</view>
+					<view class="info-money">{{money===''?"0.00":money}}</view>
+				</view>
+			</van-tab>
+		</van-tabs>
+
+	</view>
+	<view class="text-flex-end">
+		<view class="save-money" bindtap="onMoneyDetail">
+			<mp-icon type="outline" icon="pencil" color="white" size="{{15}}"></mp-icon> 编辑详情
+		</view>
+	</view>
+	<jz-input wx:if="{{userData.length!=0}}" bind:numChange="numChange" initUserInfo="{{initUserInfo}}" initData="{{initData}}" userData='{{userData}}' initDate='{{initDate}}' initRemark='{{remark}}' initValue='{{value}}' bind:submit='submit'>
+	</jz-input>
+</view>

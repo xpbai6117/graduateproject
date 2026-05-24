@@ -1,0 +1,99 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "condition": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.8.7",
+  "appid": "wx313baf6a0be8c8ab",
+  "projectname": "orange-book",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/do/do",
+          "pathName": "pages/do/do",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tally/tally",
+          "pathName": "pages/tally/tally",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pie/pie",
+          "pathName": "pages/pie/pie",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/assay-budget/assay-budget",
+          "pathName": "pages/assay-budget/assay-budget",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

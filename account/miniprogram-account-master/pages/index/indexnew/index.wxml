@@ -1,0 +1,23 @@
+<!--pages/index/index/index.wxml-->
+<wxs module="util" src="../../../utils/moneyUtil.wxs"></wxs>
+<view>
+<view class="title_top">早日奔小康</view>
+<view class="index_top">
+	<view class="top_year">
+		<view>2024年</view>
+		<view>11月</view>
+	</view>
+	<view class="top_sr">
+		<view>收入</view>
+		<view>0.00</view>
+	</view>
+	<view class="top_zc">
+		<view>支出</view>
+		<view>0.00</view>
+	</view>
+</view>
+
+<create-book wx:if="{{bookList.length==0}}" button="创建账本"></create-book>
+<home-book id="homeBook" wx:else inner-text="Some text" bookList="{{bookList}}" bookMoney="{{bookMoney}}" bookId="{{bookId}}" bookName="{{bookName}}" noticeMessage="{{noticeMessage}}" buttomEmpty="{{buttomEmpty}}" buttomMessage="{{buttomMessage}}" exSum="{{exSum}}" enterSum="{{enterSum}}" bind:init="init" bind:childrenFindList="childrenFindList" selectIncome="{{selectIncome}}" selectExpenditure="{{selectExpenditure}}" bind:onMoneyQueryFilterView="onMoneyQueryFilterView" bind:setQueryData="setQueryData" bind:childrenToggleBook="childrenToggleBook"></home-book>
+
+</view>

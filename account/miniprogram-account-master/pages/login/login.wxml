@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+<view>
+  <form bindsubmit="login">
+    <view class="form">
+      <view class="list">
+        <view class="item">
+          <view class="item_name">账号：</view>
+          <input class="item_input" type="text" placeholder="请输入账号" name="username"/>
+        </view>
+      </view>
+      <view class="list">
+        <view class="item">
+          <view class="item_name">密码：</view>
+          <input class="item_input" type="password" placeholder="请输入密码" name="pwd"/>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view>
+        <button class="sure" form-type="submit">登录</button>
+      <!-- <navigator url="/pages/register/register">账号注册</navigator> -->
+        <view class="registerBut" bind:tap="goReg">账号注册</view>
+      </view>
+      <!-- <a href="pages/register/register">账号注册</a> -->
+    </view>
+  </form> 
+</view>

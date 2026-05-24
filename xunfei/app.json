@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/chat/chat",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "light"
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "connectSocket": 20000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  },
+  "permission": {
+    "scope.webSocket": true,
+    "scope.network": true
+  },
+  "requiredBackgroundModes": ["network"],
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+	"useExtendedLib": { 
+    "weui": true 
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "debug": true
+}

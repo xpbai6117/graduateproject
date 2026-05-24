@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "category": "/components/category/index"
+  },
+  "navigationBarTitleText": "记一笔",
+  "navigationStyle": "default"
+
+}

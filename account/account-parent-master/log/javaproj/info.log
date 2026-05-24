@@ -1,0 +1,13 @@
+[17:06:19.402] [] [] [] [INFO] [logStarting] Starting AccountParentApplication on xienan.local with PID 21449 (/Users/hljy/IdeaProjects/account-parent/target/classes started by hljy in /Users/hljy/IdeaProjects/account-parent)
+[17:06:19.406] [] [] [] [INFO] [logStartupProfileInfo] The following profiles are active: dev
+[17:06:20.045] [] [] [] [INFO] [log] Initializing ProtocolHandler ["http-nio-8080"]
+[17:06:20.046] [] [] [] [INFO] [log] Starting service [Tomcat]
+[17:06:20.046] [] [] [] [INFO] [log] Starting Servlet engine: [Apache Tomcat/9.0.39]
+[17:06:20.086] [] [] [] [INFO] [log] Initializing Spring embedded WebApplicationContext
+[17:06:41.125] [] [] [] [INFO] [log] Starting ProtocolHandler ["http-nio-8080"]
+[17:06:41.170] [] [] [] [INFO] [logStarted] Started AccountParentApplication in 42.033 seconds (JVM running for 47.365)
+[17:06:41.171] [] [] [] [INFO] [main] 服务启动成功
+[17:23:53.172] [] [] [] [INFO] [log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:23:53.236] [] [] [] [INFO] [getConnection] VipHikariCP - Starting...
+[17:23:53.582] [] [] [] [INFO] [getConnection] VipHikariCP - Start completed.
+[17:23:53.961] [] [] [] [INFO] [auth] -------body:{"openid":"o6emw5VZWwN-FzF3iMj7EAF_MIho","session_key":"C3BwxhXL2RGgYeH83wpEwg=="}

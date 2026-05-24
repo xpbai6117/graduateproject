@@ -1,0 +1,41 @@
+/* pages/user/user.wxss */
+
+/* pages/login/login.wxss */
+.list {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+.form {
+  padding: 0 60rpx;
+  padding-top: 120rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+
+.item_input {
+  border-bottom: 1px solid #f5f5f5;
+  flex: 1;
+  height: 78rpx;
+  font-size: 28rpx;
+}
+
+.item_name {
+  width: 120rpx;
+}
+
+.list .item:first-child {
+  border: 0;
+}
+.sure{
+  margin-top: 60rpx;
+}
+.registerBut{
+  text-align: center;
+  margin-top: 20rpx;
+}
